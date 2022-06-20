@@ -4,6 +4,7 @@ function addToList()
     let nameValue = document.getElementById('name').value;
     list.push(nameValue);
     document.getElementById("list").innerHTML = '<li>' +list.map(i =>i).join('<br>')+ '</li>';
+    document.getElementById('name').value = '';
     return false;
 }
 
