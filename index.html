@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tirage au sort</title>
+</head>
+<script src="script.js"></script>
+<link href="styles.css" rel="stylesheet">
+<body>
+<h1>Tirage au sort de groupes</h1>
+<div class="row">
+    <div class="col left">
+        <form onsubmit="return addToList()">
+            <label for="name">Entrez un nom
+                <input type="text" id="name" required>
+            </label><br>
+            <input class="add" type="submit" value="Ajouter">
+        </form>
+        <button class="create" onclick="return tirage(list)" name="run"> Créer les groupes </button>
+    </div>
+    <div class="col right">
+        <h3>Participants :</h3>
+        <ul id="list"> </ul>
+    </div>
+</div>
+
+    <div id="tirage">
+    </div>
+</body>
+</html>
